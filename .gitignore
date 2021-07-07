@@ -1,0 +1,9 @@
+node_modules
+Code/credentials.js
+*.txt
+*.man
+*.cmd
+npm
+npx
+node.exe
+nodevars.bat

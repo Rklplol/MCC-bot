@@ -1,0 +1,25 @@
+{
+  "name": "Twitch-MCC-bot",
+  "version": "0.0.6",
+  "description": "Intended to be used as a support to other available bots with limited functionality of commands",
+  "main": "twitchbot.js",
+  "scripts": {
+    "start": "node Code/twitchbot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rklplol/Twitch-MCC-bot.git"
+  },
+  "author": "Rklplol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rklplol/Twitch-MCC-bot/issues"
+  },
+  "homepage": "https://github.com/Rklplol/Twitch-MCC-bot#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "tmi.js": "^1.8.3",
+    "ws": "^7.5.1"
+  }
+}
