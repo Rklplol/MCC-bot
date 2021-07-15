@@ -1,6 +1,4 @@
 node_modules
-Code/credentials.js
-*.txt
 *.man
 *.cmd
 npm

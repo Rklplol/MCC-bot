@@ -1,6 +1,6 @@
 {
   "name": "Twitch-MCC-bot",
-  "version": "0.0.6",
+  "version": "1.0",
   "description": "Intended to be used as a support to other available bots with limited functionality of commands",
   "main": "twitchbot.js",
   "scripts": {
