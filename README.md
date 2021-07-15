@@ -52,16 +52,18 @@ module.exports = {
 
 **Note, that *auth* and *client_id* are only responsible for Twitch API commands (!randomstream), if you don't have them - no problem, just leave them empty.**
 
-5. Download [Node.js](https://nodejs.org/en/download/) from the official website. (versions from 10.* should work fine)
+5. Open Code/users.txt and change the "name" to your channel name.
 
-6. Install necessary libraries: 
+6. Download [Node.js](https://nodejs.org/en/download/) from the official website. (versions from 10.* should work fine)
+
+7. Install necessary libraries: 
 ``` bash
     npm install fs
     npm install tmi.js
     npm install node-fetch 
 ```
-7. Insert the code into Node.js folder
-8. Run LaunchBot.bat
+8. Insert the code into Node.js folder
+9. Run LaunchBot.bat
 
 #### Running a bot on your computer from release file
 
@@ -80,7 +82,9 @@ module.exports = {
 ```
 **Note, that *auth* and *client_id* are only responsible for Twitch API commands (!randomstream), if you don't have them - no problem, just leave them empty.**
 
-5. Run LaunchBot.bat
+5. Open Code/users.txt and change the "name" to your channel name.
+
+6. Run LaunchBot.bat
 
 ## Commands overview
 
@@ -139,9 +143,9 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !refresh (multi-channel only) - calls FetchLeaderboard function which updates the leaderboard and the rank requirements
 
-!addchannel name (multi-channel only) - adds the bot to the channel
+!addchannel [name] (multi-channel only) - adds the bot to the channel
 
-!removechannel name (multi-channel only) - removes the bot from the channel 
+!removechannel [name] (multi-channel only) - removes the bot from the channel 
 
 ## Caveats
 
