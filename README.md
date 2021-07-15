@@ -127,7 +127,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !unban - lifts a ban from user
 
-!currentnextrank [name] - same, as !nextrank, but in real time (use only if necessary), 15 second cooldown
+!currentnextrank [name] - same, as !nextrank, but in real time (use only if necessary), 30 second cooldown
 
 ## Owner
 
