@@ -1,6 +1,6 @@
 ## Disclaimer
 
-Though the programm has been tested for some time, I do not expect it to be 100% reliable at all times (especially at the early stages of development).
+Though the program has been tested for some time, I do not expect it to be 100% reliable at all times (especially at the early stages of development).
 
 In case of problems, or if you have questions, suggestions and/or feedback, you have several ways to contact me.
 
@@ -33,6 +33,7 @@ Cons:
 - "Bot controller" role is assigned to me 
 - Commands can be added only through me and making a new version, and to make it in, you need to have a strong justification
 - The server still may shut down the process (though it won't be my fault)
+- In case of unexpected restart, channel information may be reset (will work on it, just keep that in mind and don't hesitate to ask me)
 
 #### Running a bot on your computer from source code
 
@@ -99,11 +100,11 @@ As of version 1.0, commands are divided into 5 layers of accessibility:
 Users of an access group can use all the commands of lower groups.
 For example, moderators as group 3, can also use the commands from groups 4-5.
 
-## Restricted user
+#### Restricted user
 
 Though, these users aren't really restricted from chatting, at the current state, they do NOT have access to bot commands.
 
-## User
+#### User
 
 !nextrank [name] - shows how many points are needed to reach next Tetr.io rank - 5-second cooldown
 
@@ -117,7 +118,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !bot, !info, !botinfo or !commands - shows information about the bot and commands - 30 second cooldown
 
-## Moderator
+#### Moderator
 
 !start - starts the bot
 
@@ -129,7 +130,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !currentnextrank [name] - same, as !nextrank, but in real time (use only if necessary), 30 second cooldown
 
-## Owner
+#### Owner
 
 !addmod [name] - adds a bot moderator
 
@@ -139,7 +140,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !randomstream - if auth and channel_id provided, gives random Tetr.io streamer
 
-## Bot controller
+#### Bot controller
 
 !refresh (multi-channel only) - calls FetchLeaderboard function which updates the leaderboard and the rank requirements
 
@@ -147,7 +148,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !removechannel [name] (multi-channel only) - removes the bot from the channel 
 
-## Caveats
+#### Caveats
 
 If channel chat is set to follower-only, your bot needs to follow your channel (unless you use your own profile as a bot, which isn't recommended, though possible) or make it a moderator
 
