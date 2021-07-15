@@ -10,7 +10,7 @@ var creditAvailable = true;
 var statsAvailable = true;
 var leaderboardAvailable = true;
 var requirementAvailable = true;
-var helpAvailable = true;
+var infoAvailable = true;
 var cnrAvailable = true;
 var listening = true;
 var ranks = ['d','d+','c-','c','c+','b-','b','b+','a-','a','a+','s-','s','s+','ss','u','x'];
@@ -52,11 +52,15 @@ async function onMessageHandler(target, context, msg, self)
 	{	
 		FetchLeaderboard();
 
-		if (commandName.startsWith('!bot')||commandName.startsWith('!info')||commandName.startsWith('!botinfo')) 
+		if (commandName.startsWith('!bot')||commandName.startsWith('!info')||commandName.startsWith('!botinfo')||commandName.startsWith('!commands')) 
 		{
-			outString = botNames[i];
-			outString += ' has started';
-			client.action(target, outString);
+			if(infoAvailable)
+			{
+				outString = 'For commands, source code and instructions, check out my repository: https://github.com/Rklplol/MCC-bot';
+				client.action(target, outString);
+				infoAvailable = false;
+				leadersTimeoutFunc = setTimeout(function () { infoAvailable = true; }, 30000);
+			}
 		}
 
 		else if (commandName.startsWith('!currentnextrank')&&(hasElevatedPermissions(t, context['username'])||(t == context['username'])))
@@ -147,7 +151,7 @@ async function onMessageHandler(target, context, msg, self)
 			}
 		}
 
-		if (commandName.startsWith('!nextrank'))
+		else if (commandName.startsWith('!nextrank'))
 		{
 			if(commandAvailable)
 			{
@@ -380,17 +384,6 @@ async function onMessageHandler(target, context, msg, self)
 					outString = 'Command was unable to find relevant channels';
 				}
 				client.action(target, outString);
-		}
-
-		else if (commandName.startsWith('!commands'))
-		{
-			if(helpAvailable)
-			{
-				outString = ' Owner:\n!addmod <name>\n!removemod <name>\n!setbotname\nMod:\n!start\n!stop\n!currentnextrank <name> 30s\nUser: \n!stats <name> 5s\n!nextrank <name> 5s\n!records <name> 10s\n!credits 100s\n!requirements <blank, all or certain rank> 30s';
-				client.action(target, outString);
-				helpAvailable = false;
-				leadersTimeoutFunc = setTimeout(function () { helpAvailable = true; }, 30000);
-			}
 		}
 
 		else if (commandName.startsWith('!refresh')&&(isBotController(context['username'])))
