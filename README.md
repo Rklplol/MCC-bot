@@ -118,7 +118,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !credits - speaks for itself - 100 second cooldown (**NOTE: The bot MAY be muted if it's not a moderator and there's link moderation by other known bots**)
 
-!bot, !info, !botinfo or !commands - shows information about the bot and commands - 30 second cooldown
+!bot, !info, !botinfo or !commands - shows information about the bot and commands - 30 second cooldown (**NOTE: The bot WILL be muted if it's not a moderator and there's link moderation by AutoMod or other known bots**)
 
 #### Moderator
 
@@ -154,7 +154,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 If channel chat is set to follower-only, your bot needs to follow your channel (unless you use your own profile as a bot, which isn't recommended, though possible) or make it a moderator
 
-If channel is sub-only, the only choice is to make the bot a moderator, unless you want to pay 5 dollars for no reason.
+If channel is sub-only, the only choice is to make the bot a moderator, unless you want to spend 5 dollars for no reason.
 
 In certain cases, bot may produce two messages with the same content in the span of 30 seconds. Twitch will block the second message. If you need it to be shown both times you have to make the bot a moderator too.
 
