@@ -8,6 +8,8 @@ In case of problems, or if you have questions, suggestions and/or feedback, you 
 * [On Discord](https://discord.gg/kXbqmsTn8Q)
 * Create the issue in this repository
 
+Tracking the progress in [Trello](https://trello.com/b/GcAJmyme/mcc-bot)
+
 ## Short summary
 Twitch multi-channel companion bot is intended to be used as a support to other available bots with limited functionality.
 At the current state, grabs data from Tetr.io API and Twitch API.
