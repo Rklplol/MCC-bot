@@ -164,7 +164,7 @@ Though, these users aren't really restricted from chatting, at the current state
 
 !removechannel [name] (multi-channel only) - removes the bot from the channel 
 
-#### Guess TR (big shoutout to Manabender and NicoNekoru for their [guessing bot] (https://github.com/Manabender/Underdogs-Cup-Twitch-Guessbot), half of commands are ported from there)
+#### Guess TR (big shoutout to Manabender and NicoNekoru for their [guessing bot](https://github.com/Manabender/Underdogs-Cup-Twitch-Guessbot), half of commands are ported from there)
 
 !gtr [empty or number of rounds] (owner) - starts the game of "Guessing TR", allowing for users (viewers), to use !join command for limited amount of time, from this moment, *everything, except for ending the game (!end) and recovering the scores (!recover) is intended to be fully automated*. If number of rounds provided, the game will stop afterwards.
 
