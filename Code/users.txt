@@ -1,1 +1,1 @@
-[{"name": "rklplol", "moderators": [], "banlist": []}]
+[{"name": "rklplol", "moderators": ["rklbot"], "banlist": []}]
