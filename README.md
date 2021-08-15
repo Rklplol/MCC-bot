@@ -196,9 +196,9 @@ More details:
     At least, 10 players need to be in list for it to be used in game (if less, random replays will be taken)
     
     Points are awarded by 3 TR zones:
-    1.1 5 points, if the guess is 25 TR points away from actual rating or less.
-    1.2 2 points, if the guess is 100 TR away or less, but more than 25 TR away.
-    1.3 1 point, if the guess is 250 TR away or less, but more than 100 TR away.
+    1 5 points, if the guess is 25 TR points away from actual rating or less.
+    2 2 points, if the guess is 100 TR away or less, but more than 25 TR away.
+    3 1 point, if the guess is 250 TR away or less, but more than 100 TR away.
     
     After typing !gtr, viewers have 5 minutes to use !join command.
     Intermission between rounds lasts for 30 seconds.
@@ -207,9 +207,9 @@ More details:
 2. Surprise rounds:
 
     There are 3 different kinds of surprise rounds:
-    1.1 Double range: every point range doubles! (+-50 TR for 5 points, +-200 TR for 2 points, +-500 TR for 1 point), 10% chance of appearing.
-    1.2 Double points: correct guess gives you double the points! (+-25 TR for 10 points, +-100 TR for 4 points, +-200 TR for 2 points), 10% chance of appearing.
-    1.3 Armageddon: Think and type FAST, round lasts for 10 seconds! 1% chance of appearing.
+    1 Double range: every point range doubles! (+-50 TR for 5 points, +-200 TR for 2 points, +-500 TR for 1 point), 10% chance of appearing.
+    2 Double points: correct guess gives you double the points! (+-25 TR for 10 points, +-100 TR for 4 points, +-200 TR for 2 points), 10% chance of appearing.
+    3 Armageddon: Think and type FAST, round lasts for 10 seconds! 1% chance of appearing.
 
     Modificators can stack, so, with 0.01% probability, you may have Armageddon round with double range and double points.
 
