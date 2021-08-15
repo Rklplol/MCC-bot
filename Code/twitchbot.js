@@ -315,7 +315,7 @@ async function onMessageHandler(target, context, msg, self)
 							if (u.data.user.league.next_at>0)
 							{ 
 								var t=u.data.user.league.rating,d=u.data.user.league.standing-u.data.user.league.next_at;
-								if(d<=1000)
+								if(d<=1000 && d>0)
 								{
 									do
 									{
@@ -331,9 +331,12 @@ async function onMessageHandler(target, context, msg, self)
 									}
 									while (d>0);
 									t=r-t;
-									outString = ans + (' needs ') + Math.round(t) + ' points to reach ' + u.data.user.league.next_rank.toUpperCase();
+									outString = ans + (' needs ') + t.toFixed(2) + ' points to reach ' + u.data.user.league.next_rank.toUpperCase();
 								}
-								else outString = 'Keep it going, '+ans+', you\'re getting there!';
+								else if (d > 1000) 
+									outString = 'Keep it going, '+ans+', you\'re getting there!';
+								else 
+									outString = 'On the next win, ' + ans + (' will be promoted to ') + u.data.user.league.next_rank.toUpperCase() + '!';
 							}
 							else
 							{
@@ -403,8 +406,15 @@ async function onMessageHandler(target, context, msg, self)
 						{
 							if (u.data.user.league.next_at>0)
 							{ 
-								var t = leaderboard.data.users[u.data.user.league.next_at].league.rating;
-								outString = ans + (' needs ') + Math.round(t-r) + ' points to reach ' + u.data.user.league.next_rank.toUpperCase();
+								if(u.data.user.league.next_at-u.data.user.league.standing<0)
+								{
+									var t = leaderboard.data.users[u.data.user.league.next_at].league.rating;
+									outString = ans + (' needs ') + (t-r).toFixed(2) + ' points to reach ' + u.data.user.league.next_rank.toUpperCase();
+								}
+								else
+								{
+									outString = 'On the next win, ' + ans + (' will be promoted to ') + u.data.user.league.next_rank.toUpperCase() + '!';
+								}
 							}
 							else
 							{
