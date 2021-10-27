@@ -22,17 +22,17 @@ Author crediting is appreciated, of course.
 
 #### Running a bot without needing to do anything
 
-Asking me through available sources (mentioned above)~~
+Asking me through available sources (mentioned above)
 
-I'm currently running a server-side multi-channel version of this bot.~~
+I'm currently running a server-side multi-channel version of this bot.
 
 Pros:
-- No need to create a new bot profile~~
-- Bot is working almost 24/7, depending on the server uptime~~ 
-- No need to create a new process on your computer and use your own CPU power~~
+- No need to create a new bot profile
+- Bot is working almost 24/7, depending on the server uptime
+- No need to create a new process on your computer and use your own CPU power
 
 Cons:
-- "Bot controller" role is assigned to me~~ 
+- "Bot controller" role is assigned to me
 - Commands can be added only through me and making a new version, and to make it in, you need to have a strong justification~~
 - The server still may shut down the process (though it won't be my fault)~~
 - In case of unexpected restart, channel information may be reset (will work on it, just keep that in mind and don't hesitate to ask me)
